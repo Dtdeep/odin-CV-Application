@@ -1,7 +1,7 @@
 import mikay from "../assets/mikay.jpg";
 import "../styles/Personal-Details.css";
 import { useState } from "react";
-export default function PersonalDetails({ isEditing }) {
+export default function SideBar({ isEditing }) {
   const [fullName, setFullName] = useState("Firstname Last name");
   const [birthday, setBirthDay] = useState("5th January 2019 in Pantukan");
   const [address, setAddress] = useState("Pantukan, Davao de Oro, Philippines");

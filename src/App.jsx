@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import PersonalDetails from "./components/PersonalDetails.jsx";
+import SideBar from "./components/SideBar.jsx";
+import MainContent from "./components/MainContent.jsx";
 
 function App() {
   const [isEditing, setIsEditing] = useState(true);
@@ -9,12 +10,13 @@ function App() {
     setIsEditing(!isEditing);
   };
   return (
-    <main className="main-container">
-      <PersonalDetails isEditing={isEditing} />
-      <button type="submit" onClick={handleEditing}>
+    <div className="main-container">
+      <SideBar isEditing={isEditing} />
+      <MainContent isEditing={isEditing} />
+      <button className="submit-button" type="submit" onClick={handleEditing}>
         {isEditing == true ? "Submit" : "Edit"}
       </button>
-    </main>
+    </div>
   );
 }
 
