@@ -5,7 +5,7 @@ export default function Article({ isEditing }) {
   const [articleHeader, setArticleHeader] = useState("Article Header");
   const [leftHeader, setLeftHeader] = useState("Left Header");
   const [rightHeader, setRightHeader] = useState("Right Header");
-  const [contents, setContents] = useState([{ content: "Mikay", id: 1 }]);
+  const [contents, setContents] = useState([{ content: "New Detail", id: 1 }]);
 
   const handleContent = (e, id) => {
     const newContent = contents.map((content) => {
